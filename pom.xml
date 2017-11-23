@@ -23,7 +23,7 @@
     <artifactId>jline-parent</artifactId>
     <name>JLine Parent</name>
     <description>JLine</description>
-    <version>3.5.1</version>
+    <version>3.5.1-sp1</version>
     <packaging>pom</packaging>
 
     <licenses>
@@ -49,6 +49,14 @@
         <system>travis</system>
         <url>https://travis-ci.org/jline/jline3</url>
     </ciManagement>
+
+<distributionManagement>
+    <repository>
+        <id>bintray</id>
+        <name>openhab-mvn</name>
+        <url>https://api.bintray.com/maven/openhab/mvn/jline/;publish=1</url>
+    </repository>
+</distributionManagement>
 
     <mailingLists>
         <mailingList>
